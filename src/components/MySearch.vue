@@ -1,10 +1,10 @@
 <template>
   <div class="px-6 mt-5">
-    <h1 class=" text-center font-light text-2xl">通讯录</h1>
+    <h1 class=" text-center font-light text-2xl text-gray-500">通讯录</h1>
     <div class=" relative mt-4  input" >
         <button class="iconfont v-icon-bigSerch-copy absolute -top-2 left-0" id="search"></button>
         <input type="text" placeholder="Search..."  :value="value" @input="handleSearch">
-        <button :class="{opacity:Object.keys(filteredName).length}"  id="search" class="iconfont v-icon-roundAdd absolute right-1 -top-2 add"></button>
+        <button :class="{opacity:(Object.keys(filteredName).length)}"  id="search" class="iconfont v-icon-roundAdd absolute right-1 -top-2 add"></button>
     </div>
   </div>
 </template>
